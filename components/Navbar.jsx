@@ -71,11 +71,13 @@ const Navbar = () => {
       {/*   İcons Section    */}
 
       <div className='hidden md:flex items-center justify-center gap-6  w-1/3'>
-       <Link href="https://www.linkedin.com/in/berkan-%C3%B6z%C3%A7elik-2bb733313/">
+       <Link href="https://github.com/BerkanJs">
        <FaGithub className='text-3xl '/>
        
        </Link>
-       <Link href="https://github.com/BerkanJs">
+       <Link href="https://www.linkedin.com/in/berkan-%C3%B6z%C3%A7elik-2bb733313/
+         
+         ">
        <FaLinkedin className='text-3xl'/>
        
        </Link>
