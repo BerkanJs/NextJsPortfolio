@@ -18,18 +18,12 @@ import {
   SiMysql,
   SiTailwindcss,
   SiBootstrap,
-
   SiExpress,
-  
-
   SiVercel,
   SiRender,
-
   SiPandas,
   SiNumpy,
   SiScikitlearn,
-
-
 } from "react-icons/si";
 import { SiKubernetes, SiRabbitmq, SiDotnet } from "react-icons/si";
 import { BsFileBarGraphFill } from "react-icons/bs";
@@ -91,34 +85,35 @@ export default function Home() {
     >
       {/* HERO */}
       <div className="flex flex-col h-full gap-8 px-4 py-16 lg:flex-row sm:px-8 md:px-12 lg:px-20 xl:px-48">
-        <div className="relative h-1/2 lg:h-full lg:w-1/2">
+        <div className="relative h-64 sm:h-80 md:h-96 lg:h-full lg:w-1/2">
           <Image
             className="object-contain"
             src="/pngHero.png"
             alt="Hero IMG"
             fill
+            priority
           />
         </div>
-        <div className="flex flex-col items-center justify-center gap-6 text-center h-1/2 lg:h-full lg:w-1/2">
-          <h1 className="text-4xl font-bold md:text-6xl">
+        <div className="flex flex-col items-center justify-center gap-6 px-4 text-center h-1/2 lg:h-full lg:w-1/2 sm:px-6 md:px-0">
+          <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
             Hi, I’m Berkan Özçelik
           </h1>
-          <h2 className="text-xl font-medium text-gray-700 md:text-2xl">
+          <h2 className="text-lg font-medium text-gray-700 sm:text-xl md:text-2xl">
             Full-Stack Developer | React · Next.js · Spring Boot · Node.js
           </h2>
-          <p className="max-w-lg text-gray-600 md:text-lg">
+          <p className="max-w-lg text-base text-gray-600 break-words sm:text-lg md:text-lg">
             Passionate about building scalable, clean, and user-friendly web
             applications. Experienced in JavaScript ecosystem, backend APIs, and
             exploring cloud-native solutions.
           </p>
-          <div className="flex justify-center w-full gap-4">
-            <Link href="/portfolio">
-              <button className="p-4 text-white transition bg-black rounded-lg hover:bg-gray-800">
+          <div className="flex flex-col w-full max-w-md gap-4 sm:flex-row sm:justify-center sm:gap-6">
+            <Link href="/portfolio" className="w-full sm:w-auto">
+              <button className="w-full p-4 text-white transition bg-black rounded-lg hover:bg-gray-800">
                 View My Work
               </button>
             </Link>
-            <Link href="/contact">
-              <button className="p-4 transition border border-black rounded-lg hover:bg-black hover:text-white">
+            <Link href="/contact" className="w-full sm:w-auto">
+              <button className="w-full p-4 transition border border-black rounded-lg hover:bg-black hover:text-white">
                 Contact Me
               </button>
             </Link>
@@ -128,22 +123,24 @@ export default function Home() {
 
       {/* ABOUT */}
       <motion.section
-        className="px-6 py-20 mx-auto rounded-lg shadow max-w-7xl bg-slate-50 md:px-20"
+        className="px-4 py-16 mx-auto rounded-lg shadow max-w-7xl bg-slate-50 md:px-20"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="mb-4 text-4xl font-bold text-center">About Me</h2>
+        <h2 className="mb-4 text-3xl font-bold text-center sm:text-4xl">
+          About Me
+        </h2>
         <div className="w-24 h-1 mx-auto mb-10 bg-black rounded"></div>
         <div className="grid gap-12 md:grid-cols-2">
           {/* Left - Bio */}
-          <div className="space-y-8 text-lg leading-relaxed text-gray-800">
+          <div className="space-y-8 text-base leading-relaxed text-gray-800 sm:text-lg">
             {/* Who I Am */}
-            <div className="p-8 bg-white rounded-lg shadow">
-              <h3 className="pb-2 mb-4 text-2xl font-bold tracking-wide text-gray-900 border-b-2 border-gray-200">
+            <div className="p-6 bg-white rounded-lg shadow sm:p-8">
+              <h3 className="pb-2 mb-4 text-xl font-bold tracking-wide text-gray-900 border-b-2 border-gray-200 sm:text-2xl">
                 Who I Am
               </h3>
-              <p className="text-lg leading-loose tracking-wide text-gray-700 font-[Inter]">
+              <p className="text-base leading-loose tracking-wide text-gray-700 font-[Inter] sm:text-lg">
                 I’m a passionate{" "}
                 <strong className="text-gray-900">full-stack developer</strong>
                 with a strong foundation in both web development and data
@@ -158,8 +155,8 @@ export default function Home() {
             </div>
 
             {/* What I Do */}
-            <div className="p-8 bg-white rounded-lg shadow">
-              <p className="text-lg leading-loose tracking-wide text-gray-700 font-[Inter]">
+            <div className="p-6 bg-white rounded-lg shadow sm:p-8">
+              <p className="text-base leading-loose tracking-wide text-gray-700 font-[Inter] sm:text-lg">
                 With a background in{" "}
                 <strong className="text-gray-900">
                   Management Information Systems (MIS)
@@ -184,7 +181,6 @@ export default function Home() {
                 title: "Full-Stack Developer",
                 desc: "React · Next.js · Node.js  Spring Boot",
               },
-
               {
                 title: "Databases",
                 desc: "PostgreSQL · MongoDB  MySQL",
@@ -198,7 +194,9 @@ export default function Home() {
                 key={i}
                 className="flex flex-col items-center justify-start px-6 py-8 space-y-6 transition bg-white rounded-lg shadow hover:shadow-lg"
               >
-                <h3 className="mb-2 text-xl font-semibold border-b-2 border-gray-900">{item.title}</h3>
+                <h3 className="mb-2 text-xl font-semibold border-b-2 border-gray-900 sm:text-2xl">
+                  {item.title}
+                </h3>
                 <p className="text-gray-600">{item.desc}</p>
               </div>
             ))}
@@ -208,24 +206,29 @@ export default function Home() {
 
       {/* TECH STACK */}
       <motion.section
-        className="px-6 py-16 my-16 text-white bg-gradient-to-b from-black via-black to-gray-800 md:px-20"
+        className="px-4 py-12 my-16 text-white bg-gradient-to-b from-black via-black to-gray-800 md:px-20"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="mb-10 text-3xl font-bold text-center"> Tech Stack</h2>
+        <h2 className="mb-10 text-3xl font-bold text-center sm:text-4xl">
+          {" "}
+          Tech Stack
+        </h2>
         <div className="grid gap-12 md:grid-cols-2">
           {techStack.map((category, index) => (
             <div key={index}>
-              <h3 className="mb-4 text-xl font-semibold">{category.title}</h3>
+              <h3 className="mb-4 text-xl font-semibold sm:text-2xl">
+                {category.title}
+              </h3>
               <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
                 {category.items.map((item, i) => (
                   <div
                     key={i}
-                    className="flex flex-col items-center gap-2 p-4 text-black transition-all duration-300 bg-white rounded-lg hover:bg-black hover:text-white "
+                    className="flex flex-col items-center gap-2 p-4 text-black transition-all duration-300 bg-white rounded-lg hover:bg-black hover:text-white"
                   >
-                    <div className="text-4xl ">{item.icon}</div>
-                    <p className="text-sm ">{item.name}</p>
+                    <div className="text-4xl">{item.icon}</div>
+                    <p className="text-sm">{item.name}</p>
                   </div>
                 ))}
               </div>
@@ -236,12 +239,12 @@ export default function Home() {
 
       {/* CURRENTLY LEARNING */}
       <motion.section
-        className="px-6 py-20 text-center text-white md:px-20"
+        className="px-4 py-16 text-center text-white md:px-20"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="mb-10 text-3xl font-bold text-black ">
+        <h2 className="mb-10 text-3xl font-bold text-black sm:text-4xl">
           Currently Learning
         </h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -283,24 +286,23 @@ export default function Home() {
           ))}
         </div>
       </motion.section>
-
       {/* CTA */}
       <motion.section
-        className="py-20 text-center text-white bg-gradient-to-b from-black via-black to-slate-900"
+        className="py-16 text-center text-white bg-gradient-to-b from-black via-black to-slate-900 md:py-20"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="mb-4 text-4xl font-extrabold tracking-wide">
+        <h2 className="mb-4 text-3xl font-extrabold tracking-wide sm:text-4xl">
           Let’s build something great together.
         </h2>
-        <p className="mb-8 text-lg text-gray-200">
+        <p className="max-w-xl mx-auto mb-8 text-lg text-gray-200">
           Have an idea or a project in mind? Let’s turn it into reality.
         </p>
         <Link href="/contact">
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className="flex items-center justify-center gap-2 px-8 py-4 mx-auto font-semibold text-black transition bg-white rounded-lg shadow-lg hover:bg-gray-200"
+            className="flex items-center justify-center w-full max-w-xs gap-2 px-8 py-4 mx-auto font-semibold text-black transition bg-white rounded-lg shadow-lg hover:bg-gray-200"
           >
             Get In Touch
           </motion.button>
