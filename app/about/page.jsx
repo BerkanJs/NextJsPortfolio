@@ -16,13 +16,13 @@ import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
 import {
   SiTypescript,
-  SiPowerbi,
+
   SiSpringboot,
   SiKubernetes,
   SiPostgresql,
 } from "react-icons/si";
 import Brain from "@/components/Brain";
-
+import { BsFileBarGraphFill } from "react-icons/bs";
 const SkillsData = [
   { id: 1, title: "HTML", icon: <FaHtml5 /> },
   { id: 2, title: "CSS", icon: <FaCss3 /> },
@@ -38,7 +38,7 @@ const SkillsData = [
   { id: 12, title: "MongoDB", icon: <DiMongodb /> },
   { id: 13, title: "PostgreSQL", icon: <SiPostgresql /> },
   { id: 14, title: "Python", icon: <FaPython /> },
-  { id: 15, title: "Power BI", icon: <SiPowerbi /> },
+  { id: 15, title: "Power BI", icon: <BsFileBarGraphFill /> },
   { id: 16, title: "Git & GitHub", icon: <FaGitAlt /> },
 ];
 
