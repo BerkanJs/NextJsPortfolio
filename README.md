@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Berkan Özçelik - Portfolio Website
 
-## Getting Started
+**English version below | Türkçe versiyon aşağıda**
 
-First, run the development server:
+---
 
+## 🇹🇷 Türkçe
+
+Bu proje, yazılım geliştirme yolculuğumu, projelerimi ve yeteneklerimi sergilemek için hazırladığım kişisel portfolyo websitesidir.  
+
+### Özellikler
+- **Hakkımda**: Yazılım yolculuğum ve yeteneklerim.  
+- **Projeler**: Öne çıkan projelerim ve GitHub bağlantıları.  
+- **İletişim**: Bana ulaşabileceğiniz sosyal medya ve e-posta bilgileri.  
+- **Responsive Tasarım**: Mobil, tablet ve masaüstü uyumlu.  
+
+### Kullanılan Teknolojiler
+- [Next.js](https://nextjs.org/) – Frontend Framework  
+- [TailwindCSS](https://tailwindcss.com/) – Stil yönetimi  
+- [Framer Motion](https://www.framer.com/motion/) – Animasyonlar  
+- [Vercel](https://vercel.com/) – Deployment  
+
+### Kurulum
+Projeyi yerel ortamda çalıştırmak için:  
 ```bash
+git clone https://github.com/kullaniciadi/portfolio.git
+cd portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Berkan Özçelik - Portfolio Website
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🇬🇧 English
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is my personal portfolio website, built to showcase my software development journey, projects, and skills.
 
-## Learn More
+### Features
+- **About Me**: My journey and professional skills.
+- **Projects**: Highlights of my work with GitHub links.
+- **Contact**: Social media and email for reaching out.
+- **Responsive Design**: Optimized for mobile, tablet, and desktop.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Tech Stack
+- [Next.js](https://nextjs.org/) – Frontend Framework
+- [TailwindCSS](https://tailwindcss.com/) – Styling
+- [Framer Motion](https://www.framer.com/motion/) – Animations
+- [Vercel](https://vercel.com/) – Deployment
